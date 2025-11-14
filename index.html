@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heath William Røyseland – CV</title>
+  <meta name="description" content="CV for Heath William Røyseland – Utvikler med erfaring fra frivillig arbeid, webhosting og prosjekter ved UiA.">
+  <style>
+    :root {
+      --bg: #0f1217;
+      --card: #171b22;
+      --text: #e6e8ea;
+      --muted: #a9afb8;
+      --accent: #5aa6ff;
+      --accent-2: #8cd17a;
+      --border: #232832;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(180deg, #151922, #11151c);
+    }
+    .identity {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #44506b, #222836);
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .contact {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .tag {
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      background: #10151c;
+      font-size: 0.9rem;
+    }
+
+    main {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+    }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; }
+      header { grid-template-columns: 1fr; }
+      .contact { justify-content: flex-start; }
+    }
+
+    section {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    section + section { margin-top: 18px; }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+    .muted { color: var(--muted); }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .item {
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #141921;
+    }
+    .item-title {
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+    .item-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 8px;
+      margin-right: 8px;
+      margin-top: 6px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      background: #11151d;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    footer {
+      margin-top: 24px;
+      padding: 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .accent { color: var(--accent-2); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header aria-label="Toppseksjon med navn og kontakt">
+      <div class="identity">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Heath William Røyseland</h1>
+          <p class="subtitle">Utviklingsinteressert med erfaring fra frivillig arbeid, webhosting og tidlig koding</p>
+        </div>
+      </div>
+      <div class="contact" aria-label="Kontaktinformasjon">
+        <span class="tag">Kristiansand, Agder</span>
+        <a class="tag" href="mailto:fornavn.etternavn@example.com" aria-label="E-post">E-post</a>
+        <a class="tag" href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a class="tag" href="#" aria-label="GitHub">GitHub</a>
+        <a class="tag" href="#" aria-label="Nettside">Nettside</a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section>
+          <h2>Om meg</h2>
+          <p>
+            Jeg er en utviklingsorientert person med bakgrunn fra frivillig arbeid med ungdom og praktisk erfaring fra webhosting og prosjekter ved universitetet. 
+            Jeg har programmert siden jeg var ung, og trives med å lære nye språk og teknologier.
+          </p>
+        </section>
+
+        <section>
+          <h2>Prosjekter</h2>
+          <ul class="list">
+            <li class="item">
+              <p class="item-title">Webserver for nettsidehosting</p>
+              <p class="item-meta">Eget prosjekt sammen med elev</p>
+              <p>Oppsett av servermiljø for hosting av nettside, inkludert konfigurasjon, sikkerhet og drift. Fokus på enkel utrulling og stabilitet.</p>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Python</span>
+              <span class="pill">Serverdrift</span>
+            </li>
+
+            <li class="item">
+              <p class="item-title">UiA Elvers – Bachelorprosjekt (deltakelse)</p>
+              <p class="item-meta">Universitetet i Agder</p>
+              <p>Bidro i et prosjektmiljø med studentgruppe, med innspill på utviklingsoppgaver og samarbeid på tekniske problemstillinger.</p>
+              <span class="pill">Samarbeid</span>
+              <span class="pill">Versjonskontroll</span>
+              <span class="pill">Prototyping</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Frivillig arbeid</h2>
+          <ul class="list">
+            <li class="item">
+              <p class="item-title">Måke Skrik</p>
+              <p>Frivillig arbeid med ungdom, praktiske oppgaver og støtte under arrangementer.</p>
+              <span class="pill">Ungdomsarbeid</span>
+              <span class="pill">Koordinering</span>
+              <span class="pill">Arrangement</span>
+            </li>
+            <li class="item">
+              <p class="item-title">UKM</p>
+              <p>Bidrag under UKM med støttefunksjoner og gjennomføring.</p>
+              <span class="pill">Kommunikasjon</span>
+              <span class="pill">Gjennomføring</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h2>Kompetanse</h2>
+          <div class="grid-2">
+            <div class="item">
+              <p class="item-title">Språk og teknologi</p>
+              <p class="muted">Praktisk forståelse og aktiv læring</p>
+              <div>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Python</span>
+                <span class="pill">C</span>
+                <span class="pill">C++</span>
+                <span class="pill">C#</span>
+                <span class="pill">Rust</span>
+              </div>
+            </div>
+            <div class="item">
+              <p class="item-title">Verktøy og praksis</p>
+              <p class="muted">God utviklingspraksis og drift</p>
+              <div>
+                <span class="pill">Git</span>
+                <span class="pill">Linux/Server</span>
+                <span class="pill">Nettsidehosting</span>
+                <span class="pill">Testing</span>
+                <span class="pill">Dokumentasjon</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Profil</h2>
+          <ul class="list">
+            <li class="item">
+              <p class="item-title">Interesse og motivasjon</p>
+              <p>Langvarig interesse for koding og utvikling, med mål om å utvide kompetanse i flere språk og rammeverk.</p>
+            </li>
+            <li class="item">
+              <p class="item-title">Læring og utvikling</p>
+              <p>Utforsker for tiden C, C++ og C#, samt vurderer Rust for systemnær utvikling.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Kontakt</h2>
+          <ul class="list">
+            <li class="item"><strong>E-post:</strong> heath.w.r@outlook.com</li>
+            <li class="item"><strong>Telefon:</strong> +47 902 10 007</li>
+            <li class="item"><strong>LinkedIn:</strong> linkedin.com/in/brukernavn</li>
+            <li class="item"><strong>GitHub:</strong> <a href="https://github.com/hyperit123">github.com/hyperit123</a></li>
+            <li class="item"><strong>Nettside:</strong> dittdomene.no</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      © <span class="accent">Heath William Røyseland</span> — Oppdatert 2025
+    </footer>
+  </div>
+</body>
+</html>

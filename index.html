@@ -5,163 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Heath William Røyseland – CV</title>
   <meta name="description" content="Oppdatert CV for Heath William Røyseland – Utvikler med erfaring fra frivillig arbeid, webhosting, prosjekter ved UiA og arbeidserfaring.">
-  <style>
-    :root {
-      --bg: #0f1217;
-      --card: #171b22;
-      --text: #e6e8ea;
-      --muted: #a9afb8;
-      --accent: #5aa6ff;
-      --accent-2: #8cd17a;
-      --border: #232832;
-    }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      line-height: 1.6;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container {
-      max-width: 1200px; /* Increased the maximum width to take more space */
-      margin: 0 auto;
-      padding: 12px; /* Reduced padding on the sides */
-    }
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 16px;
-      align-items: center;
-      padding: 32px; /* Slightly increased padding for a balanced look */
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: linear-gradient(180deg, #151922, #11151c);
-    }
-    .identity {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-    .avatar {
-      width: 120px; /* Increased size */
-      height: 120px; /* Increased size */
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #44506b, #222836);
-      border: 2px solid var(--border);
-      flex-shrink: 0;
-    }
-    .avatar img { 
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      letter-spacing: 0.2px;
-    }
-    .subtitle {
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-    .contact {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-    .tag {
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      background: #10151c;
-      font-size: 0.9rem;
-    }
-
-    main {
-      margin-top: 32px; /* Increased spacing between sections */
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 24px;
-    }
-    @media (max-width: 860px) {
-      main { grid-template-columns: 1fr; }
-      header { grid-template-columns: 1fr; }
-      .contact { justify-content: flex-start; }
-    }
-
-    section {
-      border: 1px solid var(--border);
-      background: var(--card);
-      border-radius: 16px;
-      padding: 20px;
-    }
-    section + section { margin-top: 18px; }
-    h2 {
-      margin: 0 0 10px;
-      font-size: 1.2rem;
-      color: var(--text);
-    }
-    .muted { color: var(--muted); }
-
-    .list {
-      display: grid;
-      gap: 12px;
-      margin: 8px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-    .item {
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #141921;
-    }
-    .item-title {
-      font-weight: 600;
-      margin: 0 0 4px;
-    }
-    .item-meta {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin: 0 0 6px;
-    }
-    .pill {
-      display: inline-block;
-      padding: 4px 8px;
-      margin-right: 8px;
-      margin-top: 6px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      font-size: 0.85rem;
-      color: var(--muted);
-      background: #11151d;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    @media (max-width: 600px) {
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-
-    footer {
-      margin-top: 24px;
-      padding: 16px;
-      text-align: center;
-      color: var(--muted);
-    }
-    .accent { color: var(--accent-2); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -178,9 +22,8 @@
       <div class="contact" aria-label="Kontaktinformasjon">
         <span class="tag">Kristiansand, Agder</span>
         <a class="tag" href="mailto:heath.w.r@outlook.com">E-post</a>
-        <a class="tag" href="https://linkedin.com/in/brukernavn">LinkedIn</a>
         <a class="tag" href="https://github.com/hyperit123">GitHub</a>
-        <a class="tag" href="https://dittdomene.no">Nettside</a>
+        <a class="tag" href="https://jack-knife-test.netlify.app/">Nettside</a>
       </div>
     </header>
 
@@ -190,16 +33,12 @@
           <h2>Om meg</h2>
           <p>
             Jeg er en utviklingsorientert person med langvarig interesse for koding og teknologi. 
-            Gjennom frivillig arbeid, blant annet ved Måkeskrik og UKM, har jeg fått erfaring med 
-            ungdomsarbeid, koordinering og kommunikasjon. Jeg har også deltatt i prosjekter ved 
-            Universitetet i Agder i samarbeid med IT-konsulentfirmaet Knowit, der jeg bidro i et 
-            bachelorprosjekt med fokus på utviklingsoppgaver og samarbeid i et profesjonelt miljø. 
-            I tillegg har jeg satt opp en egen webserver for nettsidehosting sammen med en medstudent, 
-            og har erfaring som skuespiller i informasjonsfilmer og reklamer for kommunale tjenester. 
-            Jeg har også jobbet praktisk med reparasjon av telefoner hos Teknikmagasinet. Jeg trives 
-            med å lære nye språk og teknologier, og utforsker for tiden C, C++ og C#, i tillegg til Rust 
-            for systemnær utvikling. Jeg er flytende i engelsk, både skriftlig og muntlig, og bruker det 
-            aktivt i studier, samarbeid og teknisk dokumentasjon.
+            Jeg har erfaring fra frivillig arbeid ved Måkeskrik (2024–2025) og UKM (2021), 
+            og har deltatt i bachelorprosjekt ved UiA i samarbeid med IT-konsulentfirmaet Knowit (2024). 
+            Jeg har satt opp en egen webserver for nettsidehosting, og har flerårig erfaring som skuespiller 
+            i reklame- og informasjonsfilmer, blant annet for Alarmtelefonen (2021 og 2025) og kommunale tjenester. 
+            Jeg har også jobbet praktisk med reparasjon av telefoner hos Teknikmagasinet. 
+            Jeg utforsker for tiden C, C++ og C#, samt Rust for systemnær utvikling.
           </p>
         </section>
 
@@ -208,15 +47,15 @@
           <ul class="list">
             <li class="item">
               <p class="item-title">Webserver for nettsidehosting</p>
-              <p class="item-meta">2024 – Eget prosjekt sammen med elev</p>
-              <p>Oppsett av servermiljø for hosting av nettside, inkludert konfigurasjon, sikkerhet og drift.</p>
+              <p class="item-meta">2024 – Eget prosjekt</p>
+              <p>Oppsett av servermiljø for hosting av nettside og vi brukte django som backend for å holde informasjonen til nettsiden, inkludert konfigurasjon, sikkerhet og drift.</p>
               <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">Serverdrift</span>
             </li>
             <li class="item">
               <p class="item-title">UiA Elvers – Bachelorprosjekt i samarbeid med Knowit</p>
               <p class="item-meta">2024 – Universitetet i Agder / Knowit</p>
-              <p>Deltakelse i bachelorprosjekt sammen med IT-konsulentfirmaet Knowit. Bidro med utviklingsoppgaver, samarbeid på tekniske problemstillinger og erfaring fra et profesjonelt prosjektmiljø.</p>
-              <span class="pill">Samarbeid</span><span class="pill">Versjonskontroll</span><span class="pill">Prototyping</span><span class="pill">IT-konsulentmiljø</span>
+              <p>Deltakelse i bachelorprosjekt sammen med IT-konsulentfirmaet Knowit. Bidro med utviklingsoppgaver og samarbeid i profesjonelt miljø.</p>
+              <span class="pill">Samarbeid</span><span class="pill">Versjonskontroll</span><span class="pill">Prototyping</span>
             </li>
           </ul>
         </section>
@@ -227,14 +66,12 @@
             <li class="item">
               <p class="item-title">Måkeskrik</p>
               <p class="item-meta">2024–2025</p>
-              <p>Frivillig arbeid med ungdom, praktiske oppgaver og støtte under arrangementer.</p>
-              <span class="pill">Ungdomsarbeid</span><span class="pill">Koordinering</span><span class="pill">Arrangement</span>
+              <p>Frivillig assistent i film- og fotogruppe, praktiske oppgaver og støtte under arrangementer.</p>
             </li>
             <li class="item">
               <p class="item-title">UKM</p>
               <p class="item-meta">2021</p>
               <p>Bidrag under UKM med støttefunksjoner og gjennomføring.</p>
-              <span class="pill">Kommunikasjon</span><span class="pill">Gjennomføring</span>
             </li>
           </ul>
         </section>
@@ -245,18 +82,17 @@
             <li class="item">
               <p class="item-title">Alarmtelefonen – Skuespiller</p>
               <p class="item-meta">2021, 2025</p>
-              <p>Skuespiller i informasjonsfilmer og reklamer knyttet til Alarmtelefonen.</p>
-              <span class="pill">Kommunikasjon</span><span class="pill">Gjennomføring</span>
+              <p>Skuespiller i informasjonsfilmer og reklamer knyttet til Alarmtelefonen tree av de.</p>
             </li>
             <li class="item">
               <p class="item-title">Kommunale reklamer og bibliotek</p>
               <p class="item-meta">2020</p>
-              <p>Skuespiller i reklamer for kommunen og biblioteket.</p>
+              <p>Skuespiller i reklamer for kommunen har jeg gjord to for de og en for biblioteket.</p>
             </li>
             <li class="item">
               <p class="item-title">Teknikmagasinet – Reparasjoner</p>
               <p class="item-meta">2020</p>
-              <p>Hjalp med reparasjoner av mobiltelefoner og teknisk utstyr.</p>
+              <p>Hjalp med reparasjoner av mobiltelefoner og annet teknisk utstyr.</p>
             </li>
             <li class="item">
               <p class="item-title">Skoleverv og representasjon</p>
@@ -309,7 +145,7 @@
             <li class="item"><strong>E-post:</strong> heath.w.r@outlook.com</li>
             <li class="item"><strong>Telefon:</strong> +47 902 10 007</li>
             <li class="item"><strong>GitHub:</strong> <a href="https://github.com/hyperit123">github.com/hyperit123</a></li>
-            <li class="item"><strong>Nettside:</strong> <a href="//jack-knife-test.netlify.app/">jack-knife-test</a></li>
+            <li class="item"><strong>Nettside:</strong> <a href="https://jack-knife-test.netlify.app/">jack-knife-test</a></li>
           </ul>
         </section>
       </div>

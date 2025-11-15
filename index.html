@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Heath William Røyseland – CV</title>
-  <meta name="description" content="CV for Heath William Røyseland – Utvikler med erfaring fra frivillig arbeid, webhosting og prosjekter ved UiA.">
+  <meta name="description" content="Oppdatert CV for Heath William Røyseland – Utvikler med erfaring fra frivillig arbeid, webhosting, prosjekter ved UiA og arbeidserfaring.">
   <style>
     :root {
       --bg: #0f1217;
@@ -27,16 +27,16 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .container {
-      max-width: 980px;
+      max-width: 1200px; /* Increased the maximum width to take more space */
       margin: 0 auto;
-      padding: 24px;
+      padding: 12px; /* Reduced padding on the sides */
     }
     header {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 16px;
       align-items: center;
-      padding: 24px;
+      padding: 32px; /* Slightly increased padding for a balanced look */
       border: 1px solid var(--border);
       border-radius: 16px;
       background: linear-gradient(180deg, #151922, #11151c);
@@ -47,11 +47,18 @@
       align-items: center;
     }
     .avatar {
-      width: 80px; height: 80px;
+      width: 120px; /* Increased size */
+      height: 120px; /* Increased size */
       border-radius: 50%;
       background: radial-gradient(circle at 30% 30%, #44506b, #222836);
       border: 2px solid var(--border);
       flex-shrink: 0;
+    }
+    .avatar img { 
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
     }
     h1 {
       margin: 0;
@@ -79,7 +86,7 @@
     }
 
     main {
-      margin-top: 24px;
+      margin-top: 32px; /* Increased spacing between sections */
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 24px;
@@ -160,18 +167,20 @@
   <div class="container">
     <header aria-label="Toppseksjon med navn og kontakt">
       <div class="identity">
-        <div class="avatar" aria-hidden="true"></div>
+        <div class="avatar">
+          <img src="73ae97cf-fe78-4288-88e7-d1c66492781a.jpg" alt="jpg">
+        </div>
         <div>
           <h1>Heath William Røyseland</h1>
-          <p class="subtitle">Utviklingsinteressert med erfaring fra frivillig arbeid, webhosting og tidlig koding</p>
+          <p class="subtitle">Utviklingsinteressert med erfaring fra frivillig arbeid, webhosting og prosjekter ved UiA</p>
         </div>
       </div>
       <div class="contact" aria-label="Kontaktinformasjon">
         <span class="tag">Kristiansand, Agder</span>
-        <a class="tag" href="mailto:fornavn.etternavn@example.com" aria-label="E-post">E-post</a>
-        <a class="tag" href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a class="tag" href="#" aria-label="GitHub">GitHub</a>
-        <a class="tag" href="#" aria-label="Nettside">Nettside</a>
+        <a class="tag" href="mailto:heath.w.r@outlook.com">E-post</a>
+        <!-- <a class="tag" href="https://linkedin.com/in/brukernavn">LinkedIn</a> -->
+        <a class="tag" href="https://github.com/hyperit123">GitHub</a>
+        <a class="tag" href="https://jack-knife-test.netlify.app/">Nettside</a>
       </div>
     </header>
 
@@ -180,32 +189,36 @@
         <section>
           <h2>Om meg</h2>
           <p>
-            Jeg er en utviklingsorientert person med bakgrunn fra frivillig arbeid med ungdom og praktisk erfaring fra webhosting og prosjekter ved universitetet. 
-            Jeg har programmert siden jeg var ung, og trives med å lære nye språk og teknologier.
+            Jeg er en utviklingsorientert person med langvarig interesse for koding og teknologi. 
+            Gjennom frivillig arbeid, blant annet ved Måke Skrik og UKM, har jeg fått erfaring med 
+            ungdomsarbeid, koordinering og kommunikasjon. Jeg har også deltatt i prosjekter ved 
+            Universitetet i Agder i samarbeid med IT-konsulentfirmaet Knowit, der jeg bidro i et 
+            bachelorprosjekt med fokus på utviklingsoppgaver og samarbeid i et profesjonelt miljø. 
+            I tillegg har jeg satt opp en egen webserver for nettsidehosting sammen med en medstudent, 
+            og har erfaring som skuespiller i informasjonsfilmer og reklamer for kommunale tjenester. 
+            Jeg har også jobbet praktisk med reparasjon av telefoner hos Teknikmagasinet. Jeg trives 
+            med å lære nye språk og teknologier, og utforsker for tiden C, C++ og C#, i tillegg til Rust 
+            for systemnær utvikling. Jeg er flytende i engelsk, både skriftlig og muntlig, og bruker det 
+            aktivt i studier, samarbeid og teknisk dokumentasjon.
           </p>
         </section>
+
+
 
         <section>
           <h2>Prosjekter</h2>
           <ul class="list">
             <li class="item">
               <p class="item-title">Webserver for nettsidehosting</p>
-              <p class="item-meta">Eget prosjekt sammen med elev</p>
-              <p>Oppsett av servermiljø for hosting av nettside, inkludert konfigurasjon, sikkerhet og drift. Fokus på enkel utrulling og stabilitet.</p>
-              <span class="pill">HTML</span>
-              <span class="pill">CSS</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">Python</span>
-              <span class="pill">Serverdrift</span>
+              <p class="item-meta">2024 – Eget prosjekt sammen med elev</p>
+              <p>Oppsett av servermiljø for hosting av nettside, inkludert konfigurasjon, sikkerhet og drift.</p>
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">Serverdrift</span>
             </li>
-
             <li class="item">
-              <p class="item-title">UiA Elvers – Bachelorprosjekt (deltakelse)</p>
-              <p class="item-meta">Universitetet i Agder</p>
-              <p>Bidro i et prosjektmiljø med studentgruppe, med innspill på utviklingsoppgaver og samarbeid på tekniske problemstillinger.</p>
-              <span class="pill">Samarbeid</span>
-              <span class="pill">Versjonskontroll</span>
-              <span class="pill">Prototyping</span>
+              <p class="item-title">UiA Elvers – Bachelorprosjekt i samarbeid med Knowit</p>
+              <p class="item-meta">2024 – Universitetet i Agder / Knowit</p>
+              <p>Deltakelse i bachelorprosjekt sammen med IT-konsulentfirmaet Knowit. Bidro med utviklingsoppgaver, samarbeid på tekniske problemstillinger og erfaring fra et profesjonelt prosjektmiljø.</p>
+              <span class="pill">Samarbeid</span><span class="pill">Versjonskontroll</span><span class="pill">Prototyping</span><span class="pill">IT-konsulentmiljø</span>
             </li>
           </ul>
         </section>
@@ -215,16 +228,37 @@
           <ul class="list">
             <li class="item">
               <p class="item-title">Måke Skrik</p>
+              <p class="item-meta">2024–2025</p>
               <p>Frivillig arbeid med ungdom, praktiske oppgaver og støtte under arrangementer.</p>
-              <span class="pill">Ungdomsarbeid</span>
-              <span class="pill">Koordinering</span>
-              <span class="pill">Arrangement</span>
+              <span class="pill">Ungdomsarbeid</span><span class="pill">Koordinering</span><span class="pill">Arrangement</span>
             </li>
             <li class="item">
               <p class="item-title">UKM</p>
+              <p class="item-meta">2021</p>
               <p>Bidrag under UKM med støttefunksjoner og gjennomføring.</p>
-              <span class="pill">Kommunikasjon</span>
-              <span class="pill">Gjennomføring</span>
+              <span class="pill">Kommunikasjon</span><span class="pill">Gjennomføring</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Arbeidserfaring</h2>
+          <ul class="list">
+            <li class="item">
+              <p class="item-title">Reklamer for Alarmtelefonen og informasjonsfilmer for kommunale tjenester</p>
+              <p class="item-meta">2021, 2025</p>
+              <p>Skuespiller i reklamer og informasjonsfilmer knyttet til Alarmtelefonen og kommunale tjenester.</p>
+              <span class="pill">Kommunikasjon</span><span class="pill">Gjennomføring</span>
+            </li>
+            <li class="item">
+              <p class="item-title">Teknikmagasinet – Reparasjoner</p>
+              <p class="item-meta">2020</p>
+              <p>Hjalp med reparasjoner av mobiltelefoner og teknisk utstyr.</p>
+            </li>
+            <li class="item">
+              <p class="item-title">Skoleverv og representasjon</p>
+              <p class="item-meta">2023–pågående</p>
+              <p>Skole-ravn i 2023, nå linjerepresentant og skole-representant i 2025.</p>
             </li>
           </ul>
         </section>
@@ -238,25 +272,15 @@
               <p class="item-title">Språk og teknologi</p>
               <p class="muted">Praktisk forståelse og aktiv læring</p>
               <div>
-                <span class="pill">HTML</span>
-                <span class="pill">CSS</span>
-                <span class="pill">JavaScript</span>
-                <span class="pill">Python</span>
-                <span class="pill">C</span>
-                <span class="pill">C++</span>
-                <span class="pill">C#</span>
-                <span class="pill">Rust</span>
+                <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Python</span>
+                <span class="pill">C</span><span class="pill">C++</span><span class="pill">C#</span><span class="pill">Rust</span>
               </div>
             </div>
             <div class="item">
               <p class="item-title">Verktøy og praksis</p>
               <p class="muted">God utviklingspraksis og drift</p>
               <div>
-                <span class="pill">Git</span>
-                <span class="pill">Linux/Server</span>
-                <span class="pill">Nettsidehosting</span>
-                <span class="pill">Testing</span>
-                <span class="pill">Dokumentasjon</span>
+                <span class="pill">Git</span><span class="pill">Linux/Server</span><span class="pill">Nettsidehosting</span><span class="pill">Testing</span><span class="pill">Dokumentasjon</span>
               </div>
             </div>
           </div>
@@ -271,7 +295,7 @@
             </li>
             <li class="item">
               <p class="item-title">Læring og utvikling</p>
-              <p>Utforsker for tiden C, C++ og C#, samt vurderer Rust for systemnær utvikling.</p>
+              <p>Utforsker for tiden C, C++ og C#, samt vurderer Rust for systemnær utvikling (2024–2025).</p>
             </li>
           </ul>
         </section>
@@ -281,9 +305,8 @@
           <ul class="list">
             <li class="item"><strong>E-post:</strong> heath.w.r@outlook.com</li>
             <li class="item"><strong>Telefon:</strong> +47 902 10 007</li>
-            <li class="item"><strong>LinkedIn:</strong> linkedin.com/in/brukernavn</li>
             <li class="item"><strong>GitHub:</strong> <a href="https://github.com/hyperit123">github.com/hyperit123</a></li>
-            <li class="item"><strong>Nettside:</strong> dittdomene.no</li>
+            <li class="item"><strong>Nettside:</strong> <a href="//jack-knife-test.netlify.app/">jack-knife-test</a></li>
           </ul>
         </section>
       </div>
